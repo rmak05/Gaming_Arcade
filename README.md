@@ -1,5 +1,5 @@
 # PDS Capstone Project
-- TOPIC: Gaming Arcade
+- TOPIC : Gaming Arcade
 - This is a gaming arcade. It contains the following games.
 # Games made:
  - 2048
