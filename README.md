@@ -14,7 +14,7 @@
  - Rock Paper Scissors
  - Tic Tac Toe
 # How to access
- - The control center of the game is the main.c file. All games can be accessed by running that file.
+ - The control center of the game is the main.c file. All games can be accessed by running that file(preferably on VS Code). Before running the main.c file, make sure that all the game files are present in a single folder.
  - All the rules of the games are available within the gaming arcade itself. 
 # Contributors
  - Ravilisetty Makarandh (IIT Bhubaneswar)
