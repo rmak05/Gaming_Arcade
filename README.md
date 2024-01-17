@@ -18,6 +18,17 @@
  - All the rules of the games are available within the gaming arcade itself. 
 # Contributors
  - Ravilisetty Makarandh (IIT Bhubaneswar)
+    - Battleship
+    - Chain Reaction
  - Suprit Naik (IIT Bhubaneswar)
+    - 2048
+    - Connect 4
+    - Minesweeper
  - Om Prakash Behera (IIT Bhubaneswar)
+    - Hand Cricket
+    - Hues and Cues
+    - Rock Paper Scissors
  - Harsh Maurya (IIT Bhubaneswar)
+    - Bingo
+    - Connect dots
+    - Tic Tac Toe
