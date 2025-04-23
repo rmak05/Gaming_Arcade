@@ -1,7 +1,9 @@
-# PDS Capstone Project
-- TOPIC : Gaming Arcade
-- This is a gaming arcade. It contains the following games.
-# Games made:
+# Gaming Arcade
+
+A neat terminal-based Gaming Arcade built in C, featuring 11 games all in one place.
+
+# Available Games
+
  - 2048
  - Battleship
  - Bingo
@@ -13,22 +15,35 @@
  - Minesweeper
  - Rock Paper Scissors
  - Tic Tac Toe
-# How to access
- - The control center of the game is the main.c file. All games can be accessed by running that file(preferably on VS Code). Before running the main.c file, make sure that all the game files are present in a single folder.
- - All the rules of the games are available within the gaming arcade itself. 
+
+# How to run the program
+
+ - Copy all the files into a folder or clone the repository.
+ - Inside the folder, use the following command to compile the code :
+   
+   ```bash
+   g++ main.cpp -o main.exe
+   ```
+ - Run the executable file using the following command :
+   ```bash
+   ./main.exe
+   ```
+ - All the rules of the games can be viewed from within the gaming arcade itself.
+   
 # Contributors
- - Ravilisetty Makarandh (IIT Bhubaneswar)
+
+ - Ravilisetty Makarandh ([@rmak05](https://github.com/rmak05))
     - Battleship
     - Chain Reaction
- - Suprit Naik (IIT Bhubaneswar)
+ - Suprit Naik ([@SNprime24](https://github.com/SNprime24))
     - 2048
     - Connect 4
     - Minesweeper
- - Om Prakash Behera (IIT Bhubaneswar)
+ - Om Prakash Behera ([@notCliche](https://github.com/notCliche))
     - Hand Cricket
     - Hues and Cues
     - Rock Paper Scissors
- - Harsh Maurya (IIT Bhubaneswar)
+ - Harsh Maurya ([@pntu007](https://github.com/pntu007))
     - Bingo
     - Connect dots
     - Tic Tac Toe
