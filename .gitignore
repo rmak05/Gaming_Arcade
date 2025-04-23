@@ -1,0 +1,9 @@
+# ignore vscode generated files
+.vscode/
+
+# ignore all .exe file
+**/*.exe
+
+# ignore my files
+demo.c
+Submission_Files/

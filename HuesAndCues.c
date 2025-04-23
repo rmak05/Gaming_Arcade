@@ -6,6 +6,7 @@
 #define MAX_ATTEMPTS 10
 #define MAX_COLORS 5
 #define PATTERN_SIZE 4
+#define PATTERN_SYMBOL 254
 
 int game_HCu();
 void generatePattern_HCu(int pattern[PATTERN_SIZE]);
@@ -81,23 +82,23 @@ void printPattern_HCu(int pattern[PATTERN_SIZE])
     for (i = 0; i < PATTERN_SIZE; i++) {
         switch (pattern[i]) {
             case 0:
-                printf("\033[1;31m%c", 4);
+                printf("\033[1;31m%c ", PATTERN_SYMBOL);
                 printf("\033[0m"); // Red
                 break;
             case 1:
-                printf("\033[1;34m%c", 4);
+                printf("\033[1;34m%c ", PATTERN_SYMBOL);
                 printf("\033[0m"); // Blue
                 break;
             case 2:
-                printf("\033[1;32m%c", 4);
+                printf("\033[1;32m%c ", PATTERN_SYMBOL);
                 printf("\033[0m"); // Green
                 break;
             case 3:
-                printf("\033[1;33m%c", 4);
+                printf("\033[1;33m%c ", PATTERN_SYMBOL);
                 printf("\033[0m"); // Yellow
                 break;
             case 4:
-                printf("\033[1;35m%c", 4);
+                printf("\033[1;35m%c ", PATTERN_SYMBOL);
                 printf("\033[0m"); // Magenta
                 break;
         }
@@ -144,7 +145,6 @@ void readInput_HCu(int input[PATTERN_SIZE])
     }
 }
 
-
 void evaluateGuess_HCu(int pattern[PATTERN_SIZE], int guess[PATTERN_SIZE], int *matchedColors, int *matchedPositions)
 {
     int i, j;
@@ -184,23 +184,23 @@ void printGuess_HCu(int guess[PATTERN_SIZE])
     for (i = 0; i < PATTERN_SIZE; i++) {
         switch (guess[i]) {
             case 0:
-                printf("\033[1;31m%c", 4);
+                printf("\033[1;31m%c ", PATTERN_SYMBOL);
                 printf("\033[0m"); // Red
                 break;
             case 1:
-                printf("\033[1;34m%c", 4);
+                printf("\033[1;34m%c ", PATTERN_SYMBOL);
                 printf("\033[0m"); // Blue
                 break;
             case 2:
-                printf("\033[1;32m%c", 4);
+                printf("\033[1;32m%c ", PATTERN_SYMBOL);
                 printf("\033[0m"); // Green
                 break;
             case 3:
-                printf("\033[1;33m%c", 4);
+                printf("\033[1;33m%c ", PATTERN_SYMBOL);
                 printf("\033[0m"); // Yellow
                 break;
             case 4:
-                printf("\033[1;35m%c", 4);
+                printf("\033[1;35m%c ", PATTERN_SYMBOL);
                 printf("\033[0m"); // Magenta
                 break;
         }
