@@ -22,11 +22,11 @@ A neat terminal-based Gaming Arcade built in C, featuring 11 games all in one pl
  - Inside the folder, use the following command to compile the code :
    
    ```bash
-   g++ main.cpp -o main.exe
+   gcc Main.c -o Main.exe
    ```
  - Run the executable file using the following command :
    ```bash
-   ./main.exe
+   ./Main.exe
    ```
  - All the rules of the games can be viewed from within the gaming arcade itself.
    
