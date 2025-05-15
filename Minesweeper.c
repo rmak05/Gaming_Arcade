@@ -3,6 +3,8 @@
 #include <time.h>
 #include <unistd.h>
 
+#define FLAG_LOGO 'F'
+
 char msarr[10][10];
 char msarr_input[10][10];
 char cor_mines[2];
@@ -29,7 +31,7 @@ int MinesweeperRules();
 void board_mines(int rows,int columns){
     printf("\033[1m");
     printf("\033[1;31m");
-    printf("No. of Flags (%c) left : %d\n\n",16,bomb_no_mines);
+    printf("No. of Flags (%c) left : %d\n\n",FLAG_LOGO,bomb_no_mines);
     printf("\033[0m");
     printf("\033[1m");
     printf("    ");    
@@ -56,7 +58,7 @@ void board_mines(int rows,int columns){
             if(msarr_input[i][j]==54) printf("\033[1;36m");
             if(msarr_input[i][j]==55) printf("\033[1;33m");
             if(msarr_input[i][j]==56) printf("\033[1;35m");
-            if(msarr_input[i][j]==16) printf("\033[1;31m");
+            if(msarr_input[i][j]==FLAG_LOGO) printf("\033[1;31m");
             if(msarr_input[i][j]==-24) printf("\033[1;30m");
             printf(" %c ",msarr_input[i][j]);
             printf("\033[0m");
@@ -247,10 +249,10 @@ void input_mines(){
     if(cor_mines[0]>64){
         start=ConvertToUpperCase_mines(cor_mines[0])-65;
         end=cor_mines[1]-48;
-        if(msarr_input[start][end]==16){
+        if(msarr_input[start][end]==FLAG_LOGO){
             printf("Do you want to remove the "); 
             printf("\033[1;31m");
-            printf("Flag %c (F) ",16);
+            printf("Flag %c (F) ",FLAG_LOGO);
             printf("\033[0m");
             printf("\033[1m");
             printf("or ");
@@ -258,14 +260,14 @@ void input_mines(){
             scanf("%c",&dig_or_flag);
             if(dig_or_flag=='E' || dig_or_flag=='e') return;
         }
-        if (msarr_input[start][end]!=-78 && msarr_input[start][end]!=16){
+        if (msarr_input[start][end]!=-78 && msarr_input[start][end]!=FLAG_LOGO){
             printf("invalid choice try again1 \n");
             return;
         }
-        while(dig_or_flag!='d' && dig_or_flag!='D' && dig_or_flag!='f' & dig_or_flag!='F' && msarr_input[start][end]!=16){
+        while(dig_or_flag!='d' && dig_or_flag!='D' && dig_or_flag!='f' & dig_or_flag!='F' && msarr_input[start][end]!=FLAG_LOGO){
             printf("Enter "); 
             printf("\033[1;31m");
-            printf("Flag %c (F) ",16);
+            printf("Flag %c (F) ",FLAG_LOGO);
             printf("\033[0m");
             printf("\033[1m");
             printf("or ");
@@ -282,12 +284,12 @@ void input_mines(){
                 printf("You don't have any more flags.\n");
                 return;
             }
-            if(msarr_input[start][end]==16){
+            if(msarr_input[start][end]==FLAG_LOGO){
                 msarr_input[start][end]=-78;
                 bomb_no_mines++;
             }
             else{
-                msarr_input[start][end]=16;
+                msarr_input[start][end]=FLAG_LOGO;
                 bomb_no_mines--;
             }
             system("cls");
@@ -297,10 +299,10 @@ void input_mines(){
     else{ 
         start=ConvertToUpperCase_mines(cor_mines[1])-65;
         end=cor_mines[0]-48;
-        if(msarr_input[start][end]==16){
+        if(msarr_input[start][end]==FLAG_LOGO){
             printf("Do you want to remove the "); 
             printf("\033[1;31m");
-            printf("Flag %c (F) ",16);
+            printf("Flag %c (F) ",FLAG_LOGO);
             printf("\033[0m");
             printf("\033[1m");
             printf("or ");
@@ -308,14 +310,14 @@ void input_mines(){
             scanf("%c",&dig_or_flag);
             if(dig_or_flag=='E' || dig_or_flag=='e') return;
         }
-        if (msarr_input[start][end]!=-78 && msarr_input[start][end]!=16){
+        if (msarr_input[start][end]!=-78 && msarr_input[start][end]!=FLAG_LOGO){
             printf("invalid choice try again \n");
             return;
         }
-        while(dig_or_flag!='d' && dig_or_flag!='D' && dig_or_flag!='f' & dig_or_flag!='F' && msarr_input[start][end]!=16){
+        while(dig_or_flag!='d' && dig_or_flag!='D' && dig_or_flag!='f' & dig_or_flag!='F' && msarr_input[start][end]!=FLAG_LOGO){
             printf("Enter "); 
             printf("\033[1;31m");
-            printf("Flag %c (F) ",16);
+            printf("Flag %c (F) ",FLAG_LOGO);
             printf("\033[0m");
             printf("\033[1m");
             printf("or ");
@@ -332,12 +334,12 @@ void input_mines(){
                 printf("You don't have any more flags.\n");
                 return;
             }
-            if(msarr_input[start][end]==16){
+            if(msarr_input[start][end]==FLAG_LOGO){
                 msarr_input[start][end]=-78;
                 bomb_no_mines++;
             }
             else{
-                msarr_input[start][end]=16;
+                msarr_input[start][end]=FLAG_LOGO;
                 bomb_no_mines--;
             }
             system("cls");

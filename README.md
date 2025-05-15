@@ -34,6 +34,18 @@ A neat terminal-based Gaming Arcade built in C, featuring 11 games all in one pl
 
 4. All the rules of the games can be viewed from within the gaming arcade itself.
    
+## Snapshots
+
+<p align="center">
+  <img src="README_Images/Battleship.png" alt="Image not found" height="500px" width="48%"/>
+  <img src="README_Images/Minesweeper.png" alt="Image not found" height="500px" width="48%"/>
+</p>    
+
+<p align="center">
+  <img src="README_Images/Hues_And_Cues.png" alt="Image not found" height="500px" width="48%"/>
+  <img src="README_Images/Connect_Dots.png" alt="Image not found" height="500px" width="48%"/>
+</p>
+
 ## Contributors
 
 - Ravilisetty Makarandh ([@rmak05](https://github.com/rmak05))
@@ -52,5 +64,5 @@ A neat terminal-based Gaming Arcade built in C, featuring 11 games all in one pl
 
 - Harsh Maurya ([@pntu007](https://github.com/pntu007))
    - Bingo
-   - Connect dots
+   - Connect Dots
    - Tic Tac Toe

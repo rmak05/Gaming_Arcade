@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define SHIP_LOGO 254
+#define SHIP_LOGO_C 'C'
+#define SHIP_LOGO_B 'B'
+#define SHIP_LOGO_R 'R'
+#define SHIP_LOGO_S 'S'
+#define SHIP_LOGO_D 'D'
+
 void PrintBoard_BS(int s);
 int ValidityCheck1_BS(int a,int b,int c,int d,int length,int s);
 int ValidityCheck2_BS(int a,int b,int s);
@@ -42,23 +49,23 @@ void PrintShipSizes_BS()
     printf("\nThe ships are -\n");
     printf("Carrier    : ");
     printf("\033[1;34m");
-    printf("%c%c%c%c%c\n",4,4,4,4,4);
+    printf("%c%c%c%c%c\n",SHIP_LOGO_C,SHIP_LOGO_C,SHIP_LOGO_C,SHIP_LOGO_C,SHIP_LOGO_C);
     printf("\033[0m");
     printf("Battleship : ");
     printf("\033[1;34m");
-    printf("%c%c%c%c\n",16,16,16,16);
+    printf("%c%c%c%c\n",SHIP_LOGO_B,SHIP_LOGO_B,SHIP_LOGO_B,SHIP_LOGO_B);
     printf("\033[0m");
     printf("Crusier    : ");
     printf("\033[1;34m");
-    printf("%c%c%c\n",17,17,17);
+    printf("%c%c%c\n",SHIP_LOGO_R,SHIP_LOGO_R,SHIP_LOGO_R);
     printf("\033[0m");
     printf("Submarine  : ");
     printf("\033[1;34m");
-    printf("%c%c%c\n",30,30,30);
+    printf("%c%c%c\n",SHIP_LOGO_S,SHIP_LOGO_S,SHIP_LOGO_S);
     printf("\033[0m");
     printf("Destroyer  : ");
     printf("\033[1;34m");
-    printf("%c%c\n\n",31,31);
+    printf("%c%c\n\n",SHIP_LOGO_D,SHIP_LOGO_D);
     printf("\033[0m");
 }
 
@@ -266,7 +273,7 @@ void SetBoard_BS(int s)
             system("cls");
         }
     }while( ValidityCheck1_BS(a,b,c,d,5,s)==0 );
-    PlaceShip_BS(a,b,c,d,5,s,4);
+    PlaceShip_BS(a,b,c,d,5,s,SHIP_LOGO_C);
     system("cls");
     }
     
@@ -307,7 +314,7 @@ void SetBoard_BS(int s)
             system("cls");
         }
     }while( ValidityCheck1_BS(a,b,c,d,4,s)==0 );
-    PlaceShip_BS(a,b,c,d,4,s,16);
+    PlaceShip_BS(a,b,c,d,4,s,SHIP_LOGO_B);
     system("cls");
     }
     
@@ -348,7 +355,7 @@ void SetBoard_BS(int s)
             system("cls");
         }
     }while( ValidityCheck1_BS(a,b,c,d,3,s)==0 );
-    PlaceShip_BS(a,b,c,d,3,s,17);
+    PlaceShip_BS(a,b,c,d,3,s,SHIP_LOGO_R);
     system("cls");
     }
     
@@ -389,7 +396,7 @@ void SetBoard_BS(int s)
             system("cls");
         }
     }while( ValidityCheck1_BS(a,b,c,d,3,s)==0 );
-    PlaceShip_BS(a,b,c,d,3,s,30);
+    PlaceShip_BS(a,b,c,d,3,s,SHIP_LOGO_S);
     system("cls");  
     }
 
@@ -430,7 +437,7 @@ void SetBoard_BS(int s)
             system("cls");
         }
     }while( ValidityCheck1_BS(a,b,c,d,2,s)==0 );
-    PlaceShip_BS(a,b,c,d,2,s,31);
+    PlaceShip_BS(a,b,c,d,2,s,SHIP_LOGO_D);
     system("cls");
     PrintShipSizes_BS();
     PrintBoard_BS(s);
