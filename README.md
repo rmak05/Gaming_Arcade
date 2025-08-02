@@ -1,6 +1,6 @@
 # Gaming Arcade
 
-A neat terminal-based Gaming Arcade built in C, featuring 11 games all in one place.
+A terminal-based Gaming Arcade built in C, featuring 11 games all in one place.
 
 ## Available Games
 
